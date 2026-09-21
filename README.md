@@ -46,15 +46,15 @@ Este repositorio contiene los ejercicios, talleres y proyectos desarrollados dur
 
 *Desarrollado por [Pablo Montenegro Ortega] - Estudiante de Data Science*
 
-## 📌 Taller 05 – Taller_05_Reducción_de_Dimensiones_y_Clustering_con_Spotify
+## 📌 Taller 05 – Taller 05 Reducción de Dimensiones y Clustering con Spotify
 * **Resumen Ejecutivo:** Análisis Comparativo PCA (2D vs. 3D)
 * **1. Análisis de los Archivos y Datos Dataset Base:** Conjunto de datos de canciones de Spotify con atributos musicales estandarizados (como acusticidad, bailabilidad, energía, valencia, tempo, sonoridad, etc.) previamente homologados al español.
 * **Proceso Común:** En ambos modelos se aplicó limpieza de nulos, estandarización estadística con StandardScaler (para dar el mismo peso a variables con escalas distintas) y reducción dimensional mediante Análisis de Componentes Principales (PCA).
 * **2. ¿Por qué implementar un modelo en 2D y otro en 3D?** La razón principal es evaluar el equilibrio entre la pérdida de información (proyección) y la interpretabilidad visual, analizando cómo se incrementa la varianza explicada acumulada al añadir una dimensión adicional.
 * **Modelo en 2D (Dos Dimensiones):**
 * **Objetivo:** Proyectar los datos en un plano cartesiano bidimensional ($X, Y$) para una visualización y análisis de clústeres simplificado.
-* **Comportamiento:** Captura una porción menor de la variabilidad total de los datos musicales originales, sirviendo como una aproximación inicial rápida [48,74%]
+* **Comportamiento:** Captura una porción menor de la variabilidad total de los datos musicales originales, sirviendo como una aproximación inicial rápida **[48,74%]**
 * **Modelo en 3D (Tres Dimensiones):**
 * **Objetivo:** Incorporar un tercer eje espacial ($Z$) para capturar mayor riqueza estructural del espacio de audio original.
-* **Ganancia de Varianza:** Permite retener un porcentaje mayor de la varianza acumulada total (alcanzando típicamente más del 60% [60,76%]en este tipo de atributos musicales).
+* **Ganancia de Varianza:** Permite retener un porcentaje mayor de la varianza acumulada total (alcanzando típicamente más del 60% **[60,76%]** en este tipo de atributos musicales).
 * **Conclusión Analítica:** El paso de 2D a 3D demuestra una mejora directa en la representación de la variabilidad de las canciones, permitiendo que algoritmos como KMeans discriminen con mayor precisión los clústeres musicales sin sacrificar drásticamente la capacidad de visualización espacial.
